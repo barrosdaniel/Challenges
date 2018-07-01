@@ -21,20 +21,16 @@ for (var i = 0; i < inputArray.length; i++) {
 var result = '';
 
 // Fahrenheit to Celcius formula. c = ((f + 40) / 1.8) - 40 
-
 function convertFahrenheitToCelsius(f) {
     var c = ((f + 40) / 1.8) - 40;
-    return c
+    return c;
 }
-
-// console.log(convertFahrenheitToCelsius(32));
-// console.log(convertFahrenheitToCelsius(212));
 
 for (var i = 0; i < inputArrayNum.length; i++) {
     var add = Math.round(convertFahrenheitToCelsius(inputArrayNum[i]));
     var addString = add.toString();
     // console.log(addString);
-    result.push(addString + ' ');
+    result += addString + ' ';
 }
 
 console.log(result);
